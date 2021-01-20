@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +78,15 @@
             <div class="alert alert-info">
                 Silahkan Masuk Dengan Username dan Password.
             </div>
-            <form class="form-horizontal" method="POST" action="">
+
+            <?php 
+    if(isset($_GET['pesan'])){
+        if($_GET['pesan']=="gagal"){
+            echo "<div class='alert'>Username dan Password tidak sesuai !</div>";
+        }
+    }
+    ?>
+            <form class="form-horizontal" method="POST" action="control/login.php">
                 <fieldset>
                     <div class="input-group input-group-lg">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>
@@ -123,39 +129,32 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <form role="form" method="POST" action="simpanpengguna.php">
-                                                  
+                    <form role="form" method="POST" action="control/daftar.php">
+                                              
 
                     <button type="button" class="close" data-dismiss="modal">×</button>
                     <h3>Daftar</h3>
                 </div>
-                <div class="modal-body">
-                    
-  
-                    <div class="form-group" hidden>
+                <div class="modal-body">          
 
-                     <label>ID</label>
-                     <input class="form-control" id="" name="id" readonly value="<?php echo $hasilkode ?>">
-                    </div>             
-                    
                                       <div class="form-group">
                                             <label>Username</label>
-                                            <input class="form-control" id="" name="username" placeholder="Masukkan Username Anda">
+                                            <input class="form-control" id="" name="username" placeholder="Masukkan Username Anda" required>
                                         </div>
 										
 					<div class="form-group">
                                             <label>Password</label>
-                                            <input type="password" class="form-control"id="" name="password" placeholder="Masukkan Password Anda">
+                                            <input type="password" class="form-control"id="" name="password" placeholder="Masukkan Password Anda" required>
                                         </div>
 					
                                             <div class="form-group" hidden>
                                             <label>Hak Akses</label>
-                                            <input class="form-control"id="" name="hakakses" value="Pasien">
+                                            <input class="form-control"id="" name="hakakses" value="Pasien" required>
                                         </div>
                          
                                          <div class="form-group">
                                             <label>Nama</label>
-                                            <input class="form-control" name="nama" id="" placeholder="Masukkan Nama Anda">
+                                            <input class="form-control" name="nama" id="" placeholder="Masukkan Nama Anda" required>
 					</div>
                     
                   
@@ -171,12 +170,12 @@
                                             </div>
                      <div class="form-group">      
                    <label>Email</label>
-                    <input class="form-control"id="" name="email" placeholder="Masukkan Email Anda">
+                    <input class="form-control" id="" name="email" placeholder="Masukkan Email Anda" required>
                     </div>
                       
                       <div class="form-group">               
                      <label>No.HP</label>
-                       <input class="form-control"id="" name="hp" placeholder="Masukkan No.HP Anda">
+                       <input class="form-control" id="" name="hp" placeholder="Masukkan No.HP Anda" required>
                        </div>                     
                                             
                 </div>
