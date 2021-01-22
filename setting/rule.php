@@ -1,21 +1,16 @@
 <?php
 if(isset($_GET['page'])){
 switch($_GET['page']){
-	
-	case 'defisiensi';
-	include 'page/defisiensi/home.php';
-	break;
+
 	case 'gejala';
-	include 'page/gejala/home.php';
+	include 'build/admin/gejala/gejala.php';
 	break;
 	case 'pengetahuan';
 	include 'page/pengetahuan/home.php';
 	break;
-	case 'keparahan';
-	include 'page/keparahan/home.php';
-	break;
+	
 	case 'identifikasi';
-	include 'page/identifikasi/home.php';
+	include 'build/admin/identifikasi/home.php';
 	break;
 	case 'daftardef';
 	include 'page/daftardef/home.php';
@@ -25,7 +20,7 @@ switch($_GET['page']){
 
 }
 else{
-include 'page/home.php';
+include 'build/home.php';
 
 }
 

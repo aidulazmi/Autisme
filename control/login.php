@@ -27,7 +27,8 @@ if($cek > 0){
 		$_SESSION['username'] = $username;
 		$_SESSION['hakakses'] = "Admin";
 		// alihkan ke halaman dashboard admin
-		header("location:../build/admin/home.php");
+		//header("location:../build/admin/home.php");
+		header("location:../index1.php");
  
 	// cek jika user login sebagai pegawai
 	}else if($data['hakakses']=="Pakar"){
@@ -43,7 +44,7 @@ if($cek > 0){
 		$_SESSION['username'] = $username;
 		$_SESSION['hakakses'] = "Pasien";
 		// alihkan ke halaman dashboard pengurus
-		header("location:../build/pasien/pasien.php");
+		header("location:../index2.php");
  
 	}else{
  

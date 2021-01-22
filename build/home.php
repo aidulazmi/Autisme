@@ -26,7 +26,7 @@ $page='Beranda';
                 <div class="card-body">
                     <div class="row" style="text-align:center">
 					<div class="col-md-4">
-					<img src="assets/gbr.png" width="50%" />
+					<img src="asset/kita/assets/gbr.png" width="50%" />
 					</div>
 					<div class="col-md-8">
 					<h2>IMPLEMENTASI METODE FUZZY DAN DAMPSTER SHAFER PADA SISTEM PAKAR DIAGNOSA DINI GEJALA AUTISME PADA ANAK</h2><hr />

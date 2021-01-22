@@ -1,15 +1,12 @@
 <?php session_start();
-
+//$_SESSION['user']='Admin';
+//$_SESSION['level']='Administrator';
 include 'control/cone.php';
 if(!isset($_SESSION['username'])){
 ?>
 <script>
-    // window.location='login.php';
+     window.location='home.php';
 </script>
-<style>
-.edtt {
-margin-bottom:150px!important;}
-</style>
 <?php
 }
 ?>
@@ -48,29 +45,46 @@ margin-bottom:150px!important;}
         <header class="topbar">
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="login.php">
-                    <h3 style="color:#fff">SISTEM PAKAR </h3>
-                    <h3 style="color:#fff"> DIAGNOSA DINI GEJALA AUTISME PADA ANAK</h3>
+                    <a class="navbar-brand" href="index1.php">
+                           <h3 style="color:#fff">SISTEM PAKAR</h3>
                     </a>
                 </div>
-                  <!-- //DIAGNOSA DINI GEJALA AUTISME PADA ANAK -->
              <div class="navbar-collapse">
                    <ul class="navbar-nav mr-auto mt-md-0">
                     </ul>
                     <ul class="navbar-nav my-lg-0">
                         
-                     
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="asset/kita/assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right scale-up">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="asset/kita/assets/images/users/1.jpg" alt="user"></div>
+                                            <div class="u-text">
+                                                <h4><?=$_SESSION['username']?></h4>
+                                                <p class="text-muted"><?=$_SESSION['hakakses']?></p></div>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    
+                                    <li><a href="control/logout.php"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </header>
-<?php include 'setting/navigasi.php';?>
+<?php include 'setting/navigasi2.php';?>
 
 
         <div class="page-wrapper">
-        <?php include 'setting/rule.php';?>
+        <?php include 'setting/rule2.php';?>
 
-            <footer class="footer"> © <?=date('Y')?> |  Izin Make Om</footer>
+            </div>
+            
+            <footer class="footer"> © <?=date('Y')?> |  :D</footer>
             
         </div>
       
