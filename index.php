@@ -68,7 +68,7 @@
         
     <div class="row">
         <div class="col-md-12 center login-header">
-            <h2>Assalamu'alaikum</h2>
+            <h2>IMPLEMENTASI METODE FUZZY DAN DAMPSTER SHAFER PADA SISTEM PAKAR DIAGNOSA DINI GEJALA AUTISME PADA ANAK</h2>
         </div>
         <!--/span-->
     </div><!--/row-->

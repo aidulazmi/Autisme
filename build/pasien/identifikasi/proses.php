@@ -245,7 +245,7 @@
 						<div class="card w-100">
                             <div class="card-body">
                                 
-                                <p class="card-text">Hasil Identifikasi Menunjukan Anak Autis/Tidak mengalami defisiensi unsur hara : <br />
+                                <p class="card-text">Hasil Identifikasi Menunjukan Anak Autis/Tidak mengalami defisiensi autis: <br />
 								<ul>
 									<?php
 									 $bnt1=str_replace('}','',str_replace('{','',$hasilnya));

@@ -106,14 +106,14 @@
 											$hitung['{teta}']=$b['plausa'];
 											?>
 											M<?=$no?> <?=$txt?> : <?=$b['belief']?><br />
-											M<?=$no?>{teta} : <?=$b['plausa']?><br />
+											M<?=$no?>{Tidak Ada Splusi} : <?=$b['plausa']?><br />
 											<?php
 										}else{
 											?>
 											<table class="table table_borderd">
 												<tr><td></td>
 													<td>M<?=$no?> <?=$txt?> : <?=$b['belief']?></td>
-													<td>M<?=$no?>{teta} : <?=$b['plausa']?></td>
+													<td>M<?=$no?>{Tidak Ada Autis, silahkan bawa ke pihak ahli} : <?=$b['plausa']?></td>
 												</tr>
 												<?php 
 												$hitungBaru=array();
@@ -245,7 +245,7 @@
 						<div class="card w-100">
                             <div class="card-body">
                                 
-                                <p class="card-text">Hasil Identifikasi Menunjukan Anak Autis/Tidak mengalami defisiensi unsur hara : <br />
+                                <p class="card-text">Hasil Identifikasi Menunjukan Anak Autis/Tidak mengalami defisiensi autis: <br />
 								<ul>
 									<?php
 									 $bnt1=str_replace('}','',str_replace('{','',$hasilnya));
