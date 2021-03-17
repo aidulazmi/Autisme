@@ -261,7 +261,6 @@
 								</ul>
 								</p>
 								<h5>Solusi</h5>
-								<p><?=$solusi?></p>
                                 
                             </div>
                         </div>
