@@ -254,13 +254,14 @@
 									 foreach($arbnt1 as $ha=>$hb){
 									 $hbbnt=str_replace(' ','',$hb);
 									$qh=mysqli_fetch_assoc(mysqli_query($koneksi,"select * from defisiensi where id_defisiensi = '$hbbnt'"));
-									$solusi .= '<p>'.$qh['solusi'].$bnt1.'</p>';
+									$solusi .= '<p>'.$qh['solusi'].'</p>';
 									?>
 									<li><?=$qh['id_defisiensi']?> : <?=$qh['defisiensi']?></li>
 									<?php } ?>
 								</ul>
 								</p>
 								<h5>Solusi</h5>
+								<p><?=$solusi?></p>
                                 
                             </div>
                         </div>
